@@ -1,0 +1,26 @@
+function calcularCostos() {
+  let N = parseInt(prompt("Ingrese número de grupos:"));
+
+  for (let i = 1; i <= N; i++) {
+    let usuarios = parseInt(prompt("Ingrese cantidad de usuarios del grupo " + i + ":"));
+    let total, costoUsuario;
+
+    if (usuarios >= 100) {
+      total = usuarios * 5;
+      costoUsuario = 5;
+    } else if (usuarios >= 50) {
+      total = usuarios * 6;
+      costoUsuario = 6;
+    } else if (usuarios >= 30) {
+      total = usuarios * 8;
+      costoUsuario = 8;
+    } else {
+      total = 300;
+      costoUsuario = (total / usuarios).toFixed(2);
+    }
+
+    console.log("Grupo " + i + ": Total = $" + total + " | Costo por usuario = $" + costoUsuario);
+  }
+}
+
+calcularCostos();
