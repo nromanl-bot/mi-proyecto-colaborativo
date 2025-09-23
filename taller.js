@@ -139,7 +139,23 @@ o Marca A, 128 GB → +$30.
 o Marca B, 64 GB → –$30.
 o Marca B, 128 GB → –$50.
 Determinar el precio final de un celular vendido.*/
-
+function precioFinal() {
+    let precio = parseFloat(prompt("Ingrese el precio inicial del celular:"));
+    let marca = prompt("Ingrese la marca (A o B):");
+    let capacidad = parseInt(prompt("Ingrese la capacidad (64 o 128):"));
+    let total = precio;
+    if (marca === "A" && capacidad === 64) {
+        total = total + 20;
+    } else if (marca === "A" && capacidad === 128) {
+        total = total + 30;
+    } else if (marca === "B" && capacidad === 64) {
+        total = total - 30;
+    } else if (marca === "B" && capacidad === 128) {
+        total = total - 50;
+    }
+    console.log("El precio final es: $" + total);
+}debugger;
+precioFinal()
 
 /*8. Versión repetitiva:
 La tienda vende N celulares. Para cada uno se ingresan marca y capacidad, y se calcula
@@ -250,5 +266,6 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
 
 
