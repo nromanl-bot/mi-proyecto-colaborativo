@@ -1,3 +1,44 @@
+/*3. Versión con arreglos:
+Guardar en un arreglo de 3 posiciones las edades de los hermanos y recorrer el arreglo
+para determinar la mayor edad.*/
+function mayor() {
+    let edad = [""]
+    edad[0] = parseIntprompt("Ingrese la edad")
+    edad[1] = parseIntprompt("Ingrese la edad")
+    edad[2] = parseIntprompt("Ingrese la edad")
+    if (edad[0] > edad[1] && edad[0] > edad[2]) {
+    console.log("La edad mayor es: " + edad[0])
+    } else if (edad[1] > edad[0] && edad[1] > edad[2]) {
+    console.log("La edad mayor es: " + edad[1])
+    } else if (edad[2] > edad[0] && edad[2] > edad[1]) {
+    console.log("La edad mayor es: " + edad[2])
+    }
+}debugger;
+mayor()
+
+/*4. Versión condicional:
+Una empresa de impresión ofrece tarjetas de invitación:
+o Pedido ≤ 200 → $2.00 c/u.
+o Entre 201 y 300 → $1.80 c/u.
+o Más de 300 → $1.50 c/u.
+Calcular el costo total de un pedido.*/
+function tarjetas() {
+    let nPedido = parseIntprompt("Ingrese cantidad de tarjetas")
+    let pUnidad = 0
+    let total = 0
+    if (nPedido <= 200) {
+    pUnidad = 2
+    } else if (nPedido > 200 && nPedido <= 300) {
+    pUnidad = 1.8
+    } else (nPedido > 300) { 
+    pUnidad = 1.6
+    }
+    total = nPedido * pUnidad
+    console.log("El total a pagar es: " + total)
+}debugger;
+tarjetas()
+
+
 /*5. Versión repetitiva:
 La empresa recibe N pedidos. Para cada pedido, leer la cantidad de tarjetas y calcular
 el costo total aplicando las mismas reglas.*/
@@ -71,3 +112,4 @@ function supGruStreArre(){
 }debugger;
 
 supGruStreArre()
+
