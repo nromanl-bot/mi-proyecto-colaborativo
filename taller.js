@@ -1,6 +1,10 @@
-//1. Versión condicional:
-//Se registran las edades de tres hermanos. El algoritmo debe determinar quién es el
-//mayor de los tres, mostrando la edad correspondiente.
+//Bloque 1: Edad mayor entre hermanos
+/*1. Versión condicional:
+Se registran las edades de tres hermanos. El algoritmo debe determinar quién es el
+mayor de los tres, mostrando la edad correspondiente.
+o Entrada: tres enteros (edades).
+o Proceso: usar condiciones múltiples para comparar.
+o Salida: “El hermano mayor tiene X años.” */
 function mayorDeEdad(){ 
     let edad1=0, edad2=0, edad3=0;
     edad1= parseInt(prompt("Ingrese la primera edad:"));
@@ -15,6 +19,28 @@ function mayorDeEdad(){
     }
 }
 mayorDeEdad();
+
+/*2. Versión repetitiva:
+Se registran N grupos de tres hermanos. Para cada grupo, el programa debe
+determinar quién es el mayor y mostrarlo en pantalla.*/
+function EdadMayorRepetitiva() { 
+   let ed1=0, ed2=0, ed3=0, a=0, b=0;
+   a = parseInt(prompt("Ingrese cantidades a repetir:"));
+   while(b < a) { 
+     ed1 = parseInt(prompt("Ingresela Primera edad:"));
+     ed2 = parseInt(prompt("Ingresela Primera edad:"));
+     ed3 = parseInt(prompt("Ingresela Primera edad:"));
+     if ( ed1 > ed2 && ed1 > ed3) {
+        alert('El hermano mayor es:${ed1}');
+     }else if( ed2 > ed1 && ed2 > ed3){
+        alert('El hermano mayor es:${ed2}');
+     }else{
+        alert('El Hermano mayor es:${ed3}');
+     }
+     b=b+1
+    }       
+}debugger;
+EdadMayorRepetitiva()
 
 /*3. Versión con arreglos:
 Guardar en un arreglo de 3 posiciones las edades de los hermanos y recorrer el arreglo
@@ -34,6 +60,7 @@ function mayor() {
 }debugger;
 mayor()
 
+//Bloque 2: Costo de pedidos de invitaciones
 /*4. Versión condicional:
 Una empresa de impresión ofrece tarjetas de invitación:
 o Pedido ≤ 200 → $2.00 c/u.
@@ -103,6 +130,16 @@ function costoPediInviArre(){
 }debugger;
 costoPediInviArre()
 
+//Bloque 3: Precio final de celulares vendidos
+/*7. Versión condicional:
+Una tienda de electrónicos fija un precio inicial a un celular y ajusta según marca y
+capacidad:
+o Marca A, 64 GB → +$20.
+o Marca A, 128 GB → +$30.
+o Marca B, 64 GB → –$30.
+o Marca B, 128 GB → –$50.
+Determinar el precio final de un celular vendido.*/
+
 /*12. Versión con arreglos:
 Guardar en un arreglo la cantidad de usuarios de cada grupo y en otro arreglo el costo
 total calculado. Mostrar además en un arreglo paralelo el costo por usuario.*/
@@ -130,5 +167,6 @@ function supGruStreArre(){
 }debugger;
 
 supGruStreArre()
+
 
 
