@@ -197,29 +197,6 @@ Una aplicación de streaming cobra según número de usuarios:
 • 30–49 usuarios → $8 c/u.
 • <30 usuarios → $300 fijos.
 Calcular el costo total y el costo por usuario para un grupo.*/
-let usu = parseInt(prompt("Ingrese la cantidad de usuarios:"));
-    let CPorUsu = 0;
-    let CTotal = 0;
-    if (usu >= 100){
-        CPorUsu = 5;
-        CTotal = CPorUsu*usu;
-    }else if (usu >= 50 && usu <= 90){
-        CPorUsu = 6;
-        CTotal = CPorUsu*usu;
-    }else if ( usu >= 30 && usu <= 49){
-        CPorUsu = 8;
-        CTotal = CPorUsu*usu;
-    }else if ( usu < 30 ){
-        CTotal = 300;
-        CPorUsu = CTotal/usu;
-    }
-    console.log("Costo total: $" + CTotal)
-    console.log("Costo por Usurio: $" + CPorUsu)    
- }
-
-/*11. Versión repetitiva:
-La aplicación recibe N solicitudes de grupos. Para cada uno, calcular el costo total y el
-costo por usuario aplicando las mismas reglas.*/
 function SuscripcionServicioStreamingVerCondicional(){
     let usu = parseInt(prompt("Ingrese la cantidad de usuarios:"));
     let CPorUsu = 0;
@@ -241,6 +218,11 @@ function SuscripcionServicioStreamingVerCondicional(){
     console.log("Costo por Usurio: $" + CPorUsu)
 }debugger;
 SuscripcionServicioStreamingVerCondicional()
+
+/*11. Versión repetitiva:
+La aplicación recibe N solicitudes de grupos. Para cada uno, calcular el costo total y el
+costo por usuario aplicando las mismas reglas.*/
+
 
 /*12. Versión con arreglos:
 Guardar en un arreglo la cantidad de usuarios de cada grupo y en otro arreglo el costo
@@ -268,4 +250,5 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
 
