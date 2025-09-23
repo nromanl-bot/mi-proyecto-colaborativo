@@ -1,6 +1,6 @@
-/*11. Versión repetitiva:
-La aplicación recibe N solicitudes de grupos. Para cada uno, calcular el costo total y el
-costo por usuario aplicando las mismas reglas.*/
+/*5. Versión repetitiva:
+La empresa recibe N pedidos. Para cada pedido, leer la cantidad de tarjetas y calcular
+el costo total aplicando las mismas reglas.*/
 function costoPediInvi(){
     let cont=0, pre=0, ctotal=0, c=0;
     let n=parseInt(prompt("Ingrese cantidad de pedidos"));
@@ -69,4 +69,5 @@ function supGruStreArre(){
         console.log(`"Grupo ${i+1} con ${usuarios[i]} usuarios, c/u: $${costocu[i]}, costo total de: $${costos[i]}"`);
     }
 }debugger;
+
 supGruStreArre()
