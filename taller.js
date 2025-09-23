@@ -1,3 +1,21 @@
+//1. Versión condicional:
+//Se registran las edades de tres hermanos. El algoritmo debe determinar quién es el
+//mayor de los tres, mostrando la edad correspondiente.
+function mayorDeEdad(){ 
+    let edad1=0, edad2=0, edad3=0;
+    edad1= parseInt(prompt("Ingrese la primera edad:"));
+    edad2= parseInt(prompt("Ingrese la segunda edad:"));
+    edad3= parseInt(prompt("Ingrese la tercera edad:"));
+    if(edad1>edad2 && edad1>edad3){
+        alert("La mayor edad es:" + edad1);
+    }else if(edad2>edad1 && edad2>edad3){
+        alert("La mayor edad es:" + edad2);
+    }else{
+        alert("La mayor edad es:" + edad3)
+    }
+}
+mayorDeEdad();
+
 /*3. Versión con arreglos:
 Guardar en un arreglo de 3 posiciones las edades de los hermanos y recorrer el arreglo
 para determinar la mayor edad.*/
@@ -112,4 +130,5 @@ function supGruStreArre(){
 }debugger;
 
 supGruStreArre()
+
 
