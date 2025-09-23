@@ -140,6 +140,7 @@ o Marca B, 64 GB → –$30.
 o Marca B, 128 GB → –$50.
 Determinar el precio final de un celular vendido.*/
 
+
 /*8. Versión repetitiva:
 La tienda vende N celulares. Para cada uno se ingresan marca y capacidad, y se calcula
 el precio final con las reglas anteriores.*/
@@ -165,6 +166,7 @@ calcularPrecioCelulares()
 Guardar en un arreglo las marcas, en otro las capacidades y en un tercer arreglo los
 precios finales de cada celular.*/
 
+
 //Bloque 4: Suscripciones grupales de streaming
 /*10. Versión condicional:
 Una aplicación de streaming cobra según número de usuarios:
@@ -173,10 +175,30 @@ Una aplicación de streaming cobra según número de usuarios:
 • 30–49 usuarios → $8 c/u.
 • <30 usuarios → $300 fijos.
 Calcular el costo total y el costo por usuario para un grupo.*/
+let usu = parseInt(prompt("Ingrese la cantidad de usuarios:"));
+    let CPorUsu = 0;
+    let CTotal = 0;
+    if (usu >= 100){
+        CPorUsu = 5;
+        CTotal = CPorUsu*usu;
+    }else if (usu >= 50 && usu <= 90){
+        CPorUsu = 6;
+        CTotal = CPorUsu*usu;
+    }else if ( usu >= 30 && usu <= 49){
+        CPorUsu = 8;
+        CTotal = CPorUsu*usu;
+    }else if ( usu < 30 ){
+        CTotal = 300;
+        CPorUsu = CTotal/usu;
+    }
+    console.log("Costo total: $" + CTotal)
+    console.log("Costo por Usurio: $" + CPorUsu)    
+ }
 
 /*11. Versión repetitiva:
 La aplicación recibe N solicitudes de grupos. Para cada uno, calcular el costo total y el
 costo por usuario aplicando las mismas reglas.*/
+
 
 /*12. Versión con arreglos:
 Guardar en un arreglo la cantidad de usuarios de cada grupo y en otro arreglo el costo
@@ -204,6 +226,7 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
 
 
 
