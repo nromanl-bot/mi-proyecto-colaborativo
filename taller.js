@@ -238,7 +238,28 @@ SuscripcionServicioStreamingVerCondicional()
 /*11. Versión repetitiva:
 La aplicación recibe N solicitudes de grupos. Para cada uno, calcular el costo total y el
 costo por usuario aplicando las mismas reglas.*/
-
+function calcularCostos() {
+  let N = parseInt(prompt("Ingrese número de grupos:"));
+  for (let i = 1; i <= N; i++) {
+    let usuarios = parseInt(prompt("Ingrese cantidad de usuarios del grupo " + i + ":"));
+    let total, costoUsuario;
+    if (usuarios >= 100) {
+      total = usuarios * 5;
+      costoUsuario = 5;
+    } else if (usuarios >= 50) {
+      total = usuarios * 6;
+      costoUsuario = 6;
+    } else if (usuarios >= 30) {
+      total = usuarios * 8;
+      costoUsuario = 8;
+    } else {
+      total = 300;
+      costoUsuario = (total / usuarios).toFixed(2);
+    }
+    console.log("Grupo " + i + ": Total = $" + total + " | Costo por usuario = $" + costoUsuario);
+  }
+}debugger;
+calcularCostos()
 
 /*12. Versión con arreglos:
 Guardar en un arreglo la cantidad de usuarios de cada grupo y en otro arreglo el costo
@@ -266,6 +287,3 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
-
-
-
