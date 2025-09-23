@@ -1,9 +1,6 @@
-//Entrada: leer(edad1), leer(edad2), leer(edad3).
-//Proceso: si edad1 > edad2 y edad1 > edad3 entonces escribir edad1
-//         sino si edad2 > edad1 y edad2 > edad3 entoces escribir edad2
-//         sino escribir edad3 
-//Salida:  "El hermano mayor tiene x años."
-
+1. Versión condicional:
+Se registran las edades de tres hermanos. El algoritmo debe determinar quién es el
+mayor de los tres, mostrando la edad correspondiente.
 function mayorDeEdad(){ 
     let edad1=0, edad2=0, edad3=0;
     edad1= parseInt(prompt("Ingrese la primera edad:"));
@@ -19,22 +16,9 @@ function mayorDeEdad(){
     }
       mayorDeEdad(); 
       
-//Entrada: leer(N), leer(marca), leer(capacidad), leer(precioBase).
-//Proceso: Para i ← 1 hasta N hacer 
-//         leer(marca), leer (capacidad), leer(precioBase)
-//         si marca = "A" y capacidad = 64 entonces
-//            precioFinal ← precioBase + 20 
-//         sino si marca = "A" y capacidad = 128 entonces
-//              precioFinal ← precioBase + 30
-//         sino si marca = "B" y capacidad = 64 entonces
-//              precioFinal ← precioBase - 30
-//         sino si marca = "B" y capacidad = 128 entonces
-//              precioFinal ← precioBase - 50
-//         FinSi 
-//         Escribir "El precio final del cecular es: ", precioFinal
-//         FinPara 
-//Salida: "El precio final del celular es: $X."
-
+8. Versión repetitiva:
+La tienda vende N celulares. Para cada uno se ingresan marca y capacidad, y se calcula
+el precio final con las reglas anteriores.
 function calcularPrecioCelulares() {
     for (let i = 0; i < n; i++) {
     const {marca, capacidad, precioBase } = celulares[i];
@@ -52,3 +36,4 @@ function calcularPrecioCelulares() {
     }
 }
      calcularPrecioCelulares(); 
+
