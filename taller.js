@@ -165,7 +165,29 @@ calcularPrecioCelulares()
 /*9. Versión con arreglos:
 Guardar en un arreglo las marcas, en otro las capacidades y en un tercer arreglo los
 precios finales de cada celular.*/
-
+function PreciofinaldeCelulares(){
+  let PBase= parseInt(prompt("ingrese el precio base del celular:"));
+  let Marca= ["A","B","A","B"];
+  let Cap = [64, 128, 128, 64];
+  let Pfinal= [];
+  for(let i = 0; i < Marca.length; i++) {
+    let Pfinal1 = PBase;
+    if (Marca[i] === "A" && Cap[i] === 64) {
+         Pfinal += 20;
+     } else if (Marca[i] === "A" && Cap[i] === 128) {
+         Pfinal += 30;
+     } else if (Marca[i] === "B" && Cap[i] === 64) {
+         Pfinal += 30;
+     } else if (Marca[i] === "B" && Cap[i] === 128) {
+         Pfinal += 50;
+     }
+     Pfinal.push(Pfinal1);
+  }
+   console.log("Marcas:",Marca);
+   console.log("Capacidades:",Cap);
+   console.log("Precios Finales:",Pfinal);
+}debugger;
+PreciofinaldeCelulares()
 
 //Bloque 4: Suscripciones grupales de streaming
 /*10. Versión condicional:
@@ -246,3 +268,4 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
