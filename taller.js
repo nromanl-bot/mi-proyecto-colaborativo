@@ -1,3 +1,11 @@
+/* INTEGRANTES:
+NOLBER PAUL ROMAN LAVAYEN
+RONNY DANIEL MUÑOZ LUZCANDO
+NAIROBI IVANNIA PEÑAHERRERA DURANGO
+SOFIA GABRIELA ESPINOZA VERA
+ANGEL ALEJANDRO PEÑAHERRERA FIALLOS
+*/
+
 //Bloque 1: Edad mayor entre hermanos
 /*1. Versión condicional:
 Se registran las edades de tres hermanos. El algoritmo debe determinar quién es el
@@ -287,3 +295,4 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
