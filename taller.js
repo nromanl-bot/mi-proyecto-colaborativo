@@ -35,9 +35,9 @@ function EdadMayorRepetitiva() {
    let ed1=0, ed2=0, ed3=0, a=0, b=0;
    a = parseInt(prompt("Ingrese cantidades a repetir:"));
    while(b < a) { 
-     ed1 = parseInt(prompt("Ingresela Primera edad:"));
-     ed2 = parseInt(prompt("Ingresela Primera edad:"));
-     ed3 = parseInt(prompt("Ingresela Primera edad:"));
+     ed1 = parseInt(prompt("Ingrese la Primera edad:"));
+     ed2 = parseInt(prompt("Ingrese la Primera edad:"));
+     ed3 = parseInt(prompt("Ingrese la Primera edad:"));
      if ( ed1 > ed2 && ed1 > ed3) {
         alert('El hermano mayor es:${ed1}');
      }else if( ed2 > ed1 && ed2 > ed3){
@@ -295,5 +295,6 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
 
 
