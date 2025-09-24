@@ -54,10 +54,10 @@ EdadMayorRepetitiva()
 Guardar en un arreglo de 3 posiciones las edades de los hermanos y recorrer el arreglo
 para determinar la mayor edad.*/
 function mayor() {
-    let edad = [""]
-    edad[0] = parseIntprompt("Ingrese la edad")
-    edad[1] = parseIntprompt("Ingrese la edad")
-    edad[2] = parseIntprompt("Ingrese la edad")
+    let edad = [""];
+    edad[0] = parseInt(prompt("Ingrese la edad"));
+    edad[1] = parseInt(prompt("Ingrese la edad"));
+    edad[2] = parseInt(prompt("Ingrese la edad"));
     if (edad[0] > edad[1] && edad[0] > edad[2]) {
     console.log("La edad mayor es: " + edad[0])
     } else if (edad[1] > edad[0] && edad[1] > edad[2]) {
@@ -76,7 +76,7 @@ o Entre 201 y 300 → $1.80 c/u.
 o Más de 300 → $1.50 c/u.
 Calcular el costo total de un pedido.*/
 function tarjetas() {
-    let nPedido = parseIntprompt("Ingrese cantidad de tarjetas")
+    let nPedido = parseInt(prompt("Ingrese cantidad de tarjetas"));
     let pUnidad = 0
     let total = 0
     if (nPedido <= 200) {
@@ -295,4 +295,5 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
 
