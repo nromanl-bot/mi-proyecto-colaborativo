@@ -178,7 +178,7 @@ function calcularPrecioCelulares() {
         precioFinal += 30;
         } else if (marca === "B" && capacidad === 64) {
         precioFinal -=30;
-        }else if (maca === "B" && capacidad === 123) {
+        }else if (marca === "B" && capacidad === 123) {
         precioFinal -= 50;
         }
     console.log(`El precio final del celular es: $${precioFinal}`);
@@ -295,6 +295,7 @@ function supGruStreArre(){
     }
 }debugger;
 supGruStreArre()
+
 
 
 
